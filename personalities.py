@@ -1,4 +1,4 @@
-# Persoanlities list
+# Personalities list
 
 personalities = {
     "friendly": "You are a cheerful and friendly assistant. Respond in a positive and engaging tone.",

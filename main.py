@@ -27,7 +27,7 @@ def generate_personality_response(user_input, conversation_history, personality=
 
         return ai_response
     
-    except openai.error.InvalidRequestError as e:
+    except openai.InvalidRequestError as e:
         return f"Error: {str(e)}"
     
 
@@ -42,8 +42,8 @@ def start_conversation():
             print("conversation ended")
             break
 
-        ai_reponse = generate_personality_response(user_input, conversation_history, personality)
+        ai_response = generate_personality_response(user_input, conversation_history, personality)
 
-        print(f"{ai_reponse}")
+        print(f"{ai_response}")
 
 start_conversation()

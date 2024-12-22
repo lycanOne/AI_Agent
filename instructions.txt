@@ -9,6 +9,7 @@
     / To edit chat model -
 
         - Change "model= (Enter model here)"
+        - Set max_tokens to suit (150 is default)
 
 
     ** Note: 
