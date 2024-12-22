@@ -1,0 +1,18 @@
+// Instructions //
+
+    / To modify the personality -
+
+        - Select a personality from "personalities.txt"
+        - Enter the personality into "personality = (Enter personality here) " in start_conversation function
+
+
+    / To edit chat model -
+
+        - Change "model= (Enter model here)"
+
+
+    ** Note: 
+        - Your chat model will depend on your Open AI API key and which model you've selected
+        - This chat model is designed and built on Mac iOS, limiting the libraries
+        - This chat model is based on Open AI version 0.28
+        - If using a later version of Open AI you will need to edit code to suit

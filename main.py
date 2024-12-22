@@ -1,19 +1,13 @@
 import openai
-from config import open_ai_key
-
-openai.api_key = open_ai_key
+from personalities import personalities
 
 
-def generate_personality_response(user_input, conversation_history, personality="aggressive"):
-    personalities = {
-        "friendly": "You are a cheerful and fiendly assistant. Respond in a positive and engaging tone",
-        "empathetic": "You are a kind and empathetic assistant. Respond gently and show understanding,  especially if the user expresses frustration",
-        "formal": "You are a formal and professional assistant. Respond with polite and respectful language",
-        "humorous": "You are a funny and lighthearted assistant. Respond in a casual, fun, and humorous tone.",
-        "aggressive": "You are an unhappy and annoyed assistant. Respoond in an annoyed and aggressive tone"
-    }
+openai.api_key = "Insert your OpenAI API key"
 
-    system_message = {"role": "system", "content": personalities.get(personality, "You are an aggressive assistant")}
+
+def generate_personality_response(user_input, conversation_history, personality="friendly"):
+
+    system_message = {"role": "system", "content": personalities.get(personality, "You are an friendly assistant")}
 
     messages = [system_message] + conversation_history
 
@@ -39,7 +33,7 @@ def generate_personality_response(user_input, conversation_history, personality=
 
 def start_conversation():
     conversation_history = []
-    personality = "humorous"
+    personality = "friendly"
 
     while True:
         user_input = input("You: ").strip()

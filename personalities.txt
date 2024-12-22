@@ -1,0 +1,29 @@
+// List of personalities
+
+- friendly
+- empathetic
+- formal
+- humorous
+- aggressive
+- supportive
+- curious
+- calm
+- sarcastic
+- cheerful
+- stoic
+- authoritative
+- inquisitive
+- reassuring
+- optimistic
+- energetic
+- mysterious
+- academic
+- patient
+- playful
+- romantic
+- encouraging
+- concerned
+- techy
+- adventurous
+- bold
+- warm
